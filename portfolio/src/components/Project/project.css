@@ -1,4 +1,7 @@
-.hover {
+.imgDiv {
+    position: relative; 
+}
+.hover img{
     opacity: 0.5;
 }
 .project-links {
@@ -6,6 +9,10 @@
     top: 25%;
 }
 
-.noHover{
-    opacity:0.2;
+.hoverLink{
+    opacity:1;
+}
+
+.noHoverLink{
+    opacity:.5;
 }
