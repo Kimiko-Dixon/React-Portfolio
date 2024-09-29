@@ -1,0 +1,11 @@
+.hover {
+    opacity: 0.5;
+}
+.project-links {
+    position: absolute;
+    top: 25%;
+}
+
+.noHover{
+    opacity:0.2;
+}
