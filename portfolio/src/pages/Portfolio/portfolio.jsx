@@ -25,16 +25,21 @@ import './portfolio.css'
             }
         ]
         const [target,setTarget] = useState('')
+        const [targetLink,setTargetLink] = useState('')
         const onHover = (key) => {
             console.log(key)
             setTarget(key)
         }
-        
+
+        const onHoverLink = (key) => {
+            console.log(key)
+            setTargetLink(key)
+        }
         return (
             <>
                 {projects.map((project) => (
                     <div key={project.name} >
-                        <Project project={project} onHover={onHover} target={target}/>
+                        <Project project={project} onHover={onHover} target={target} onHoverLink={onHoverLink} targetLink={targetLink}/>
                     </div>
                 
                 ))}
