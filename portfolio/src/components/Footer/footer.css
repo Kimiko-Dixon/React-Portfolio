@@ -1,3 +1,8 @@
 .noHover{
     opacity:0.2;
 }
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
