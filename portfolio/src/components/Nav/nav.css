@@ -1,7 +1,13 @@
 ul {
     display: flex;
+    flex-direction: column;
 }
 
-nav li {
-    padding-right: 2em ;
+.onPage {
+    text-decoration: underline;
+    text-decoration-color: #18a289;
 }
+
+/* nav li {
+    padding-right: 2em ;
+} */

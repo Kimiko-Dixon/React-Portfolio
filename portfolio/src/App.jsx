@@ -9,13 +9,19 @@ import './App.css'
 function App() {
   return (
     <>
-    <Header>
-      <Nav/>
-    </Header>
-    <main>
-      <Outlet/>
-    </main>
+    <div className='row justify-content-between'>
+      <div className='col-3' id='sticky'>
+        <Header>
+          <Nav/>
+        </Header>
+      </div>
+      <div className='col'>
+        <main>
+          <Outlet/>
+        </main>
+      </div>
     <Footer/>
+    </div>
    </> 
   )
 }
