@@ -1,0 +1,10 @@
+#about img {
+    float: left;
+    padding-right: 3%;
+    width: 45%;
+    height: auto;
+}
+
+#about .about-content{
+   font-size: .8em;
+}

@@ -1,5 +1,9 @@
 .imgDiv {
-    position: relative; 
+    position: relative;
+}
+.imgDiv img {
+    width: 85%;
+    height: auto;
 }
 .hover img{
     opacity: 0.5;

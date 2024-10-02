@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { validEmail } from "../utils/validate"
+import './contact.css'
 
 export default function Contact() {
     const [email,setEmail] = useState('')
@@ -92,7 +93,7 @@ export default function Contact() {
 
             </textarea>
             {error.length ? (<p>{error}</p>) : null}
-            <button type="submit">Submit</button>
+            <button type="submit" id="submit">Submit</button>
         </form>
     )
 } 
