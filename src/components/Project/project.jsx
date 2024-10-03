@@ -20,7 +20,7 @@ Project.propTypes = {
                         target='_blank' 
                         onMouseEnter={() => onHoverLink('deployed')} 
                         onMouseLeave={() => onHoverLink('')} 
-                        className={targetLink ===  'deployed' ? ('hoverLink') : ('noHoverLink')}
+                        className={targetLink ===  'deployed' ? ('deployed hoverLink') : ('deployed noHoverLink')}
                     >
                         {project.name}
                     </a>
@@ -29,7 +29,7 @@ Project.propTypes = {
                         target='_blank'
                         onMouseEnter={() => onHoverLink('repo')} 
                         onMouseLeave={() => onHoverLink('')} 
-                        className={targetLink ===  'repo' ? ('hoverLink') : ('noHoverLink')}
+                        className={targetLink ===  'repo' ? ('repo hoverLink') : ('repo noHoverLink')}
                     >
                         <ion-icon name="logo-github"></ion-icon>
                     </a>

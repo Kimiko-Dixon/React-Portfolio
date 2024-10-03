@@ -1,3 +1,5 @@
-/* #projects {
-    width: 50%;
-} */
+#projects {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+}

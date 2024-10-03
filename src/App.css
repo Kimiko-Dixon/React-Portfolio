@@ -66,10 +66,17 @@ body {
   padding: 3%;
 }
 
-/* #sticky {
-  position: sticky;
-}
-
 .pg-content {
   position: relative;
-} */
+  display: flex;
+}
+
+.scroll {
+  height: min-content;
+  position:relative;
+}
+
+.sticky {
+  position: sticky;
+  bottom: 0;
+}

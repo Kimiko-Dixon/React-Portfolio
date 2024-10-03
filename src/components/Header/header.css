@@ -4,3 +4,8 @@ header {
     justify-content:center;
     align-items: flex-start;
 }
+
+.sticky {
+    position: sticky;
+    bottom: 0;
+  }

@@ -3,10 +3,10 @@ import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import App from './App.jsx'
-import AboutMe from './pages/aboutMe.jsx'
+import AboutMe from './pages/About/aboutMe.jsx'
 import Portfolio from './pages/Portfolio/portfolio.jsx'
-import Contact from './pages/contact.jsx'
-import Resume from './pages/resume.jsx'
+import Contact from './pages/Contact/contact.jsx'
+import Resume from './pages/Resume/resume.jsx'
 
 import './index.css'
 
