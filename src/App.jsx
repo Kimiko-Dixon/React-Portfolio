@@ -10,12 +10,12 @@ function App() {
   return (
     <>
     <div className='row justify-content-between'>
-      <div className='col-3' id='sticky'>
+      <div className='col-3'>
         <Header>
           <Nav/>
         </Header>
       </div>
-      <div className='col'>
+      <div className='col-6'>
         <main>
           <Outlet/>
         </main>

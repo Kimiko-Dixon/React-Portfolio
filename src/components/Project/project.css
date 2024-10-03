@@ -11,7 +11,18 @@
 .project-links {
     position: absolute;
     top: 25%;
+    left: 5%;
+    font-size: .8em;
 }
+
+.project-links a {
+    font-weight: bold;
+}
+
+/* icon-icon {
+    position: relative;
+    top: 50%;
+} */
 
 .hoverLink{
     opacity:1;

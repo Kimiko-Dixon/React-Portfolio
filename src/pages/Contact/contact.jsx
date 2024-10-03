@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { validEmail } from "../utils/validate"
+import { validEmail } from "../../utils/validate"
 import './contact.css'
 
 export default function Contact() {
@@ -60,7 +60,9 @@ export default function Contact() {
         }
     }
     return (
-        <form onSubmit={handleSubmit}>
+        <>
+            <h2>Contact</h2>
+            <form onSubmit={handleSubmit}>
             <label htmlFor="Name">Name:</label>
             <input
                 value={name} 
@@ -95,5 +97,6 @@ export default function Contact() {
             {error.length ? (<p>{error}</p>) : null}
             <button type="submit" id="submit">Submit</button>
         </form>
+        </>
     )
 } 
