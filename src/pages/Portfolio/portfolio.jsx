@@ -61,13 +61,13 @@ import './portfolio.css'
         return (
             <>
                 <h2>Portfolio</h2>
-                <div className='row row-cols-2 g-3' id='projects'>
-                {projects.map((project) => (
-                    <div key={project.name} >
-                        <Project project={project} onHover={onHover} target={target} onHoverLink={onHoverLink} targetLink={targetLink}/>
-                    </div>
+                <div className='scroll' id='projects'>
+                    {projects.map((project) => (
+                        <div key={project.name} className='project'>
+                            <Project project={project} onHover={onHover} target={target} onHoverLink={onHoverLink} targetLink={targetLink}/>
+                        </div>
                 ))}
-            </div>
+                </div>
             </>
             
         )

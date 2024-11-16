@@ -8,21 +8,21 @@ import './App.css'
 
 function App() {
   return (
-    <>
+    <div className='container'>
     <div className='row justify-content-between'>
       <div className='col-3'>
         <Header>
           <Nav/>
         </Header>
       </div>
-      <div className='col-6'>
-        <main>
+      <div className='col-6 scroll'>
+        <div>
           <Outlet/>
-        </main>
+        </div>
       </div>
-    <Footer/>
+      <Footer/>
     </div>
-   </> 
+   </div> 
   )
 }
 

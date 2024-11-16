@@ -7,7 +7,7 @@ Header.propTypes = {
 
 export default function Header({children}) {
     return (
-        <header /* className='sticky' */>
+        <header className='sticky'>
             <div id='name'>
                 <h1>Kimiko Dixon</h1>
             </div>

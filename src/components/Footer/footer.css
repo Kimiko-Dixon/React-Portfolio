@@ -3,10 +3,14 @@
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
 }
 
 .background-cred {
     font-size: .5em;
+}
+
+#footer-links {
+    flex-direction: row;
 }

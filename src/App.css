@@ -60,10 +60,6 @@ body {
   font-family: "Gruppo", sans-serif;
   color: #ffffff;
   font-size: 1.5em;
-  max-height: 100vh;
-  margin: 2%;
-  border: 2px solid;
-  padding: 3%;
 }
 
 .pg-content {
@@ -71,12 +67,20 @@ body {
   display: flex;
 }
 
-.scroll {
-  height: min-content;
-  position:relative;
-}
-
-.sticky {
+/* .sticky {
   position: sticky;
   bottom: 0;
+} */
+
+.scroll {
+  height: 100vh;
+  position:relative;
+  top: 3%;
+}
+
+.container {
+  display: flex;
+  margin:5%;
+  /* padding:5%; */
+
 }

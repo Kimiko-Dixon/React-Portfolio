@@ -1,5 +1,18 @@
 #projects {
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
+    /* max-height: 100vh; */
+   /*  overflow-y: scroll; */
+}
+
+.project {
+    margin-bottom: 1%;
+}
+
+#projects .scroll {
+    /* height: 100vh; */
+    position:relative;
+    top: 3%;
 }
