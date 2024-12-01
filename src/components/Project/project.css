@@ -1,27 +1,49 @@
-.imgDiv {
-    position: relative;
-}
-.imgDiv img {
-    width: 85%;
+/*  .imgDiv {
+    background-color: red;
+    height: 30%;
+}  */
+/*.imgDiv img {
+    width: 20%;
     height: auto;
-}
+}*/
+/* .project {
+    height: 20vh;
+    background-color: red;
+} */
+
 .hover img{
     opacity: 0.5;
 }
+.img-n-links{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
 .project-links {
     position: absolute;
-    top: 25%;
-    left: 5%;
-    font-size: .8em;
-}
-
-.project-links a {
-    font-weight: bold;
-}
-
-/* icon-icon {
-    position: relative;
     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: max-content;*/
+    width: 80%;
+    height: 80%;
+} 
+
+.deployed{
+   font-size: 1rem;
+}
+
+.repo {
+    font-size: 1.5rem;
+}
+
+/* a {
+   height: fit-content;
 } */
 
 .hoverLink{
@@ -31,3 +53,19 @@
 .noHoverLink{
     opacity:.5;
 }
+
+/* .project-img {
+   border: solid;
+} */
+
+.project-card {
+    height: 100%;
+}
+
+.project-card div{
+    border-radius: var(--chakra-radii-l3)
+ }
+
+ img {
+    width: 100%;
+ }

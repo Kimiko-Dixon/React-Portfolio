@@ -1,16 +1,19 @@
-.noHover{
+ .noHover{
     opacity:0.2;
 }
 
-footer {
+/*footer {
     /* position: absolute;
-    bottom: 0; */
-}
+    bottom: 0; 
+}*/
 
 .background-cred {
     font-size: .5em;
 }
 
 #footer-links {
+    display: flex;
     flex-direction: row;
+    justify-content: center;
+    /* padding-left: 0; */
 }

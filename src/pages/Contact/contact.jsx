@@ -60,7 +60,7 @@ export default function Contact() {
         }
     }
     return (
-        <>
+        <div id="contact">
             <h2>Contact</h2>
             <form onSubmit={handleSubmit}>
             <label htmlFor="Name">Name:</label>
@@ -97,6 +97,6 @@ export default function Contact() {
             {error.length ? (<p>{error}</p>) : null}
             <button type="submit" id="submit">Submit</button>
         </form>
-        </>
+        </div>
     )
 } 
