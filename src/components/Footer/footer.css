@@ -1,12 +1,19 @@
-.noHover{
+ .noHover{
     opacity:0.2;
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
-}
+/*footer {
+    /* position: absolute;
+    bottom: 0; 
+}*/
 
 .background-cred {
     font-size: .5em;
+}
+
+#footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* padding-left: 0; */
 }

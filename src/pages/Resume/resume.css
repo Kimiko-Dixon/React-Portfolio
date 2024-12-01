@@ -1,4 +1,4 @@
-.resume-link {
+/* .resume-link {
     text-decoration: underline;
     text-decoration-color: #18a289;
 }
@@ -18,4 +18,8 @@ h5 {
 
 .proficiencies ul {
     padding-left: 1em;
+} */
+
+#resume {
+    height: 100%;
 }

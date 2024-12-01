@@ -1,5 +1,33 @@
-#projects {
-    display:flex;
-    justify-content: center;
-    align-content: center;
+ #projects {
+    /* display:flex;
+    flex-direction: column; */
+    /* justify-content: center;
+    align-content: center; */
+    height: 100%;
+    
 }
+
+/*.project {
+    margin-bottom: 1%;
+}
+
+#projects .scroll {
+    position:relative;
+    top: 3%;
+} */
+
+#portfolio {
+    height: 100%;
+}
+.imgDiv {
+    position: relative;
+    /* width: fit-content; */
+    display: flex;
+    justify-content: center;
+}
+/* .project {
+    background-color: red;
+    border-radius: 10%;
+    height: 30vh;
+    
+}  */

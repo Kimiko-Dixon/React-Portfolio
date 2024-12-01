@@ -1,3 +1,7 @@
+:root {
+  --padding-y:3%;
+}
+
 /* #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -41,42 +45,21 @@
   color: #888;
 }
 */
-ul {
-  padding:0
-}
-ul li{
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: #ffffff;
+#layout {
+  /* border: 2px solid; */
   
+  /* margin: .5%; */
 }
 
-body {
-  background-image: url('./img/background.jpg');
-  background-size: cover;
-  font-family: "Gruppo", sans-serif;
-  color: #ffffff;
-  font-size: 1.5em;
-  max-height: 100vh;
-  margin: 2%;
-  border: 2px solid;
-  padding: 3%;
+/* #hero-div {
+  background-color: green;
+} */
+
+#about-div,#portfolio-div,#contact-div,#resume-div {
+  padding: var(--padding-y);
+  /* margin-bottom: 5%; */
 }
 
-.pg-content {
-  position: relative;
-  display: flex;
-}
-
-.scroll {
-  height: min-content;
-  position:relative;
-}
-
-.sticky {
-  position: sticky;
-  bottom: 0;
+#footer-div {
+  padding: 0 var(--padding-y);
 }

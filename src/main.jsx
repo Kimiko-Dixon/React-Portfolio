@@ -1,16 +1,19 @@
-import ReactDom from 'react-dom/client'
-import { createBrowserRouter,RouterProvider } from 'react-router-dom'
-import 'bootstrap/dist/css/bootstrap.min.css';
+/* import ReactDom from 'react-dom/client'
+import { createBrowserRouter,RouterProvider } from 'react-router-dom' */
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import { ChakraProvider } from "@chakra-ui/react";
+import { system } from "@chakra-ui/react/preset";
 
 import App from './App.jsx'
-import AboutMe from './pages/About/aboutMe.jsx'
+/* import AboutMe from './pages/About/aboutMe.jsx'
 import Portfolio from './pages/Portfolio/portfolio.jsx'
 import Contact from './pages/Contact/contact.jsx'
 import Resume from './pages/Resume/resume.jsx'
-
+ */
 import './index.css'
 
-const router = createBrowserRouter([
+/* const router = createBrowserRouter([
   {
     path:'/',
     element:<App/>,
@@ -33,8 +36,12 @@ const router = createBrowserRouter([
       }
     ]
   }
-])
+]) */
 
-ReactDom.createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router}/>
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+  <ChakraProvider value={system}>
+    <App/>
+  </ChakraProvider>
+  </StrictMode>
 )
