@@ -6,7 +6,7 @@ import taskBoard from "../../img/Tasks1.jpg";
 import weather from "../../img/HistorySearch.jpg";
 import noteTaker from "../../img/Notes_Saved.jpg";
 import personalBlog from "../../img/BlogPage.jpg";
-import { Grid,GridItem, Heading } from "@chakra-ui/react";
+import { Box, Grid,GridItem, Heading } from "@chakra-ui/react";
 import "./portfolio.css";
 
 export default function Portfolio() {
@@ -91,9 +91,8 @@ export default function Portfolio() {
     setTargetLink(key);
   };
   return (
-    <div id="portfolio">
-      {/* <h2>Portfolio</h2> */}
-      <Grid /*gridAutoFlow='columns' {projects.length === 3 ? 'columns' : null}*/   templateColumns={projects.length === 2 ? 'repeat(2,1fr)' : `repeat(3,1fr)`} gap='8' id="projects">
+    <Box id="portfolio">
+      <Grid templateColumns={projects.length === 2 ? 'repeat(2,1fr)' : `repeat(3,1fr)`} gap='8' id="projects">
         {projects.length === 1 ? 
         (<>
         <GridItem colSpan={1} display='flex' justifyContent='center' alignItems='center'>
@@ -101,7 +100,7 @@ export default function Portfolio() {
         </GridItem>
         <GridItem colSpan={2}>
         {projects.map((project) => (
-          <div key={project.name} className="project "/* className="col project" */ /* onMouseEnter={() => onHover(project.name)} onMouseLeave={() => onHover('')} className={target ===  project.name ? ('col imgDiv hover') : ('col imgDiv')  }*/ >
+          <Box key={project.name} className="project" >
             <Project
               project={project}
               onHover={onHover}
@@ -109,13 +108,13 @@ export default function Portfolio() {
               onHoverLink={onHoverLink}
               targetLink={targetLink}
             />
-          </div>
+          </Box>
         ))}
         </GridItem>
         </>)
         :
         (projects.map((project) => (
-          <div key={project.name} className="project "/* className="col project" */ /* onMouseEnter={() => onHover(project.name)} onMouseLeave={() => onHover('')} className={target ===  project.name ? ('col imgDiv hover') : ('col imgDiv')  }*/ >
+          <Box key={project.name} className="project">
             <Project
               project={project}
               onHover={onHover}
@@ -123,13 +122,13 @@ export default function Portfolio() {
               onHoverLink={onHoverLink}
               targetLink={targetLink}
             />
-          </div>
+          </Box>
         )))}
         
       </Grid>
       
         
       
-    </div>
+    </Box>
   );
 }

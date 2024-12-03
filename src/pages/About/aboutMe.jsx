@@ -1,17 +1,16 @@
 import headShot from "../../img/profile-photo.jpg";
 import './aboutMe.css'
-import { Heading, Image,Text } from "@chakra-ui/react"
+import { Box, Heading, Image,Text } from "@chakra-ui/react"
 
 export default function AboutMe() {
   return (
-    <div id="about">
-      {/* <Heading size='3xl'>About Me</Heading> */}
+    <Box id="about">
       <Image  src={headShot} alt="Kimiko Dixon" shadow='-10px 10px' id="head-shot"/>
-      <div className="about-content">
-        <Heading size='5xl' /* fontSize='5vw' */>
+      <Box className="about-content">
+        <Heading size='5xl'>
           Kimiko Dixon
         </Heading>
-        <Heading  size='xl' /* fontSize='2vw' */ pt='1' pb='5' pl='.1em'>
+        <Heading  size='xl' pt='1' pb='5' pl='.1em'>
           Backend Developer
         </Heading>
           <Text pl='.15em'>
@@ -23,7 +22,7 @@ export default function AboutMe() {
             great communication, problem-solving, and teamwork as well as a
             detailed oriented mindset.
           </Text>
-         </div> 
-      </div>
+         </Box> 
+      </Box>
   );
 }

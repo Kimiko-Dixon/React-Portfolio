@@ -45,19 +45,9 @@
   color: #888;
 }
 */
-#layout {
-  /* border: 2px solid; */
-  
-  /* margin: .5%; */
-}
-
-/* #hero-div {
-  background-color: green;
-} */
 
 #about-div,#portfolio-div,#contact-div,#resume-div {
   padding: var(--padding-y);
-  /* margin-bottom: 5%; */
 }
 
 #footer-div {
